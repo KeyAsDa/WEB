@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <span class="heading">TRÒ CHƠI QUAY SỐ</span>
+        </div>
+
+        <div class="content">
+            <div class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="./index.html">Trang chủ</a></li>
+                    <li class="nav-item"><a href="./quayso.html">Trò chơi quay số</a></li>
+                    <li class="nav-item"><a href="./xucxac.html">Trò chơi quay xúc xắc</a></li>
+                </ul>
+            </div>
+
+            <div class="content-body">
+                <div class="language">
+                    <ul class="language-list">
+                        <li class="language-item">C#</li>
+                        <li class="language-item">PHP & MySQL</li>
+                        <li class="language-item">XML</li>
+                        <li class="language-item">Java</li>
+                        <li class="language-item">SQLServer</li>
+                        <li class="language-item">ASP.NET</li>
+                        <li class="language-item">Android</li>
+                        <li class="language-item">Windows Phone</li>
+                    </ul>
+                </div>
+
+                <div class="infomation">
+                    <div class="info-content">
+                        <div>
+                            <h3>ĐĂNG KÝ MUA HÀNG</h3>
+                            <form id="myForm" onsubmit="return sub()">
+                                <table>
+                                    <tr>
+                                        <td><label for="user">Họ tên:</label></td>
+                                        <td><input type="text" id="user" size="25" name="user"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="email">Email:</label></td>
+                                        <td><input type="email" id="email" size="25"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="soLuong">Số lượng mua:</label></td>
+                                        <td><input type="number" id="soLuong" size="20" min="0" name="soLuong"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="date">Ngày nhận hàng:</label></td>
+                                        <td><input type="date" id="date" size="25" name="date"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="thanhToan">Thanh toán:</label></td>
+                                        <td>
+                                            <input type="checkbox" name="ck"> Chuyển Khoản
+                                            <input type="checkbox" name="tt"> Trực tiếp khi giao hàng
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        
+                                        <td></td>
+                                        <td>
+                                            <input type="submit" value="Đăng ký mua">
+                                            <input type="reset" value="Xóa">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                        <p id="desc"></p>
+                    </div>
+                </div>
+
+                <div class="adver">
+                    <div><p>Vùng quảng cáo 1</p></div>
+                    <div><p>Vùng quảng cáo 2</p></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Bài thực hành Ứng dụng web</p>
+        </div>
+    </div>
+</body>
+</html>

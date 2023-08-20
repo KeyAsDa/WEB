@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(32, 152, 32));
+    height: 90px;
+    text-align: center;
+}
+
+.heading {
+    line-height: 90px;
+    color: yellow;
+    font-size: x-large;
+    font-weight: 700;
+    text-shadow: 3px 3px 2px black;
+}
+
+.heading:hover {
+    color: red;
+    font-size: xx-large;
+}
+
+.content {
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.nav {
+    background-color: blue;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 40px;
+    padding: 0 16px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav-item a:hover {
+    font-size: 22px;
+    color: yellow;
+}
+
+.box {
+    float: left;
+    height: 510px;
+}
+
+.language {
+    width: 15%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(32, 152, 32));
+}
+
+.language-list {
+    margin-left: 40px;
+    list-style-type: disc;
+    margin-top: 32px;
+}
+
+.language-item {
+    color: #fff;
+    padding: 8px 0;
+    font-size: 17px;
+}
+
+.infomation {
+    width: 60%;
+}
+
+.info-content {
+    width: 98%;
+    margin-left: 9px;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.random div {
+    display: inline-block;
+    width: 250px;
+    height: 220px;
+    background-color: rgb(207, 206, 206);
+    margin: 0 16px;
+}
+
+.random img {
+    width: 100%;
+    height: 100%;
+}
+
+#kq {
+    text-align: center;
+    margin-top: 32px;
+    font-size: 19px;
+    font-weight: 700;
+    color: red;
+}
+
+#quay {
+    margin: 4px auto;
+    display: block;
+    padding: 4px 8px;
+}
+
+.adver {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(32, 152, 32));
+}
+
+.adver div {
+    background-color: bisque;
+    height: 200px;
+    margin: 24px 16px 0 32px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.adver div p {
+    font-size: 20px;
+    margin-top: 40px;
+    font-weight: 700;
+}
+
+.footer {
+    background-color: blue;
+    height: 94px;
+    margin-top: 4px;
+}
+
+.footer p {
+    text-align: center;
+    line-height: 94px;
+    font-weight: 700;
+    color: yellow;
+    font-size: 17px;
+}
