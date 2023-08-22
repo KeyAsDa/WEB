@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>BÀI THI ỨNG DỤNG WEB</h1>
+            <p>MSSV: 12345 - Họ tên: Nguyễn Nhật Hưng</p>
+        </div>
+
+        <div class="content">
+            <div class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">Trang chủ</li>
+                    <li class="nav-item">
+                        Các hãng xe
+                        <ul class="navbar">
+                            <li class="navbar-item">Ford</li>
+                            <li class="navbar-item">Honda</li>
+                            <li class="navbar-item">Toyota</li>
+                            <li class="navbar-item">Hyundai</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-body">
+                <div class="list-cars">
+                    <img src="./anhWhite.jfif" alt="" class="img">
+                    <img src="./anhBlue.jfif" alt="" class="img">
+                    <img src="./anhRed.jfif" alt="" class="img">
+                    <img src="./anhYellow.jfif" alt="" class="img">
+                </div>
+
+                <div class="content-info">
+                    <h1>THÔNG TIN ĐẶT HÀNG</h1>
+                    <table>
+                        <tr>
+                            <td>Loại xe</td>
+                            <td><select name="car" id="car">
+                                <option value="Honda">Honda</option>
+                                <option value="Kia">Kia</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td>Số lượng</td>
+                            <td><input type="number" name="count" id="count" min="0"></td>
+                        </tr>
+                        <tr>
+                            <td>Màu sắc</td>
+                            <td>
+                                <div class="box-color" id="boxRed"></div>
+                                <div class="box-color" id="boxBlue"></div>
+                                <div class="box-color" id="boxYellow"></div>
+                                <div class="box-color" id="boxWhite"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div class="box-img">
+                                    <img src="./anhBlue.jfif" alt="" id="img-product">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button class="btn">Đặt hàng</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><p id="desc"></p></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Copyright 2022</p>
+        </div>
+    </div>
+</body>
+</html>
