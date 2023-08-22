@@ -51,64 +51,14 @@ $(document).ready(function() {
     $('#box4').click(function() {
         $('.color').css('background-color', 'green');
     })
-
-    $('#img1').click(function() {
+    $(".img-flower").click(function() {
+        var img = $(this).attr("src");
         $('.box.picture').css({
-            'background-image':"url('./anh1.jpg')",
+            'background-image':"url('" + img + "')",
             'background-repeat':'no-repeat',
             'background-size':'cover'
         })
     })
-    $('#img2').click(function() {
-        $('.box.picture').css({
-            'background-image':"url('./anh2.jpg')",
-            'background-repeat':'no-repeat',
-            'background-size':'cover'
-        })
-    })
-    $('#img3').click(function() {
-        $('.box.picture').css({
-            'background-image':"url('./anh3.jpg')",
-            'background-repeat':'no-repeat',
-            'background-size':'cover'
-        })
-    })
-    $('#img4').click(function() {
-        $('.box.picture').css({
-            'background-image':"url('./anh4.jpg')",
-            'background-repeat':'no-repeat',
-            'background-size':'cover'
-        })
-    })
-    $('#img5').click(function() {
-        $('.box.picture').css({
-            'background-image':"url('./anh5.jpg')",
-            'background-repeat':'no-repeat',
-            'background-size':'cover'
-        })
-    })
-    $('#img6').click(function() {
-        $('.box.picture').css({
-            'background-image':"url('./anh6.jpg')",
-            'background-repeat':'no-repeat',
-            'background-size':'cover'
-        })
-    })
-    $('#img7').click(function() {
-        $('.box.picture').css({
-            'background-image':"url('./anh7.jpg')",
-            'background-repeat':'no-repeat',
-            'background-size':'cover'
-        })
-    })
-    $('#img8').click(function() {
-        $('.box.picture').css({
-            'background-image':"url('./anh8.jpg')",
-            'background-repeat':'no-repeat',
-            'background-size':'cover'
-        })
-    })
-    
 })
 
 function play() {
