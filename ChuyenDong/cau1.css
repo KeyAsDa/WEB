@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 100%;
+    display: block;
+}
+
+.row {
+    display: flex;
+    margin: 0 -2px;
+}
+
+.height {
+    height: 470px;
+}
+
+.col {
+    padding: 0 2px;
+    margin: 0 2px;
+}
+
+.c-8 {
+    flex: 0 0 12.5%;
+    width: 12.5%;
+}
+
+.c-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.c-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.main {
+    margin: 0 60px;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    height: 75px;
+    background-color: rgb(39, 194, 237);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-heading {
+    color: yellow;
+    text-shadow: 5px 5px 3px orangered;
+    margin-left: 35px;
+}
+
+.header-info {
+    margin-right: 35px;
+    color: #fff;
+    font-size: 17px;
+}
+
+.nav {
+    margin-top: 4px;
+    background-color: rgb(29, 225, 186);
+    height: 36px;
+}
+
+.nav-list {
+    text-align: center;
+}
+
+.nav-item {
+    position: relative;
+    display: inline-block;
+    line-height: 36px;
+    background-color: rgb(12, 110, 123);
+    color: #fff;
+    padding: 0 32px;
+    cursor: pointer;
+}
+
+.nav-item:hover .navbar {
+    display: block;
+}
+
+.navbar {
+    position: absolute;
+    top: 103%;
+    left: 0;
+    background-color: rgb(12, 110, 123);
+    width: 100%;
+    display: none;
+}
+
+.navbar::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+}
+
+.navbar-item {
+    text-align: left;
+    border: 1px dotted #fff;
+}
+
+.navbar-item input {
+    margin-left: 15px;
+}
+
+.content {
+    margin-top: 4px;
+    background-color: #fff;
+    height: 580px;
+}
+
+.content-img {
+    height: 110px;
+    background-color: #fff;
+}
+
+.list-img {
+    display: flex;
+    flex-direction: row;
+}
+
+.box-img {
+    width: 12.5%;
+    height: 110px;
+    margin: 0 2px;
+}
+
+.img-flower {
+    width: 100%;
+    height: 110px;
+}
+
+.pickColor {
+    background-color: rgb(135, 240, 240);
+}
+
+.pickColor div {
+    display: inline-block;
+    width: 50px;
+    height: 60px;
+    border: 1px solid black;
+    margin: 4px 16px;
+}
+
+
+#box1 {
+    background-color: red;
+}
+
+#box2 {
+    background-color: blue;
+}
+
+#box3 {
+    background-color: yellow;
+}
+
+#box4 {
+    background-color: green;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+}
+
+.btn button {
+    padding: 4px 16px;
+    margin: 16px 16px;
+}
+
+.moveBox {
+    background-color: rgb(135, 240, 240);
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    top: 130px;
+    left: 100px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.box.color {
+    background-color: blue;
+}
+
+.box.picture {
+    background-image: url('./anh1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
