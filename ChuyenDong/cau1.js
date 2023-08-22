@@ -3,7 +3,6 @@ var dy = 5;
 var boxWidth;
 var boxHeight;
 var myInterval;
-
 $(document).ready(function() {
     boxWidth = $('.box').width();
     boxHeight = $('.box').height();
