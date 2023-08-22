@@ -39,18 +39,31 @@ $(document).ready(function() {
         $('.box').removeClass('picture');
     })
 
-    $('#box1').click(function() {
-        $('.color').css('background-color', 'red');
+    $(".pickColor div").click(function() {
+        var color = $(this).css("background-color");
+        var name;
+        switch (color) {
+            case "rgb(255, 0, 0)":
+                name = "red"
+                $('.color').css('background-color', 'red');
+                break;
+            case "rgb(0, 0, 255)":
+                name = "blue"
+                $('.color').css('background-color', 'blue');
+                break;
+            case "rgb(255, 255, 0)":
+                name = "yellow"
+                $('.color').css('background-color', 'yellow');
+                break;
+            case "rgb(0, 128, 0)":
+                name = "green"
+                $('.color').css('background-color', 'green');
+                break;
+            default:
+                break;
+        }
     })
-    $('#box2').click(function() {
-        $('.color').css('background-color', 'blue');
-    })
-    $('#box3').click(function() {
-        $('.color').css('background-color', 'yellow');
-    })
-    $('#box4').click(function() {
-        $('.color').css('background-color', 'green');
-    })
+
     $(".img-flower").click(function() {
         var img = $(this).attr("src");
         $('.box.picture').css({
